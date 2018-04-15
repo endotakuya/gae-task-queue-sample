@@ -1,0 +1,17 @@
+runtime: go
+api_version: go1.9
+
+nobuild_files:
+- build/
+- vendor/
+
+skip_files:
+- vendor/
+- build/
+
+handlers:
+- url: /worker/.*
+  script: _go_app
+  login: admin
+- url: /.*
+  script: _go_app

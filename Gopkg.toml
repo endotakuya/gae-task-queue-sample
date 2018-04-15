@@ -1,0 +1,7 @@
+[[constraint]]
+  branch = "master"
+  name = "github.com/alecthomas/template"
+
+[[constraint]]
+  name = "google.golang.org/appengine"
+  version = "1.0.0"
